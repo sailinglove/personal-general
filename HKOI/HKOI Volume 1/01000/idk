@@ -1,0 +1,29 @@
+type
+  TCommand = (Append, Cut, Insert, Replace);
+
+const
+  appendLength = 8;   //' Append '
+  cutLength = 5;    //' Cut '
+  replaceLength = 9;    //' Replace '
+
+var
+  input, output : array[1..50] of String;
+  host, target : String;
+  count, i, hostLength, commandLength, targetLength, targetPos, inPos : Integer;
+  command : TCommand;
+
+function FFindSubString(h, t : String; hL, tL : Integer) : Integer;
+
+function FFindQuotationMark(s : String; n : Integer) : Integer;
+
+function FQuotedCutter(s : String; lp : Integer; var l : Integer) : String;
+
+function FOperatorDeterminer(var cL : Integer; s : String) : TCommand;
+
+function FAppend(h, t : String) : String;
+
+function FCut(h, t : String; hL, tL: Integer; var tp : Integer) : String;
+
+function FInsert(h, t : String; hL, p : Integer) : String;
+
+function FReplace(s, h, t : String; hL, tL : Integer) : String;
