@@ -12,6 +12,7 @@ target_site_2 = target_site[38:]
 option = webdriver.ChromeOptions()
 option.add_argument('headless')
 driver = webdriver.Chrome(chrome_options=option)
+
 # Normal chrome - human readable testing
 # driver = webdriver.Chrome()
 
