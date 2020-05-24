@@ -8,7 +8,12 @@ target_site = open("target.txt", "r").readline()
 target_site_1 = target_site[:38]
 target_site_2 = target_site[38:]
 
-driver = webdriver.Chrome()
+# Headless chrome - more efficient
+option = webdriver.ChromeOptions()
+option.add_argument('headless')
+driver = webdriver.Chrome(chrome_options=option)
+# Normal chrome - human readable testing
+# driver = webdriver.Chrome()
 
 urls = []
 print(target_site_1 + "1" + target_site_2)
