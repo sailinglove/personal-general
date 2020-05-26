@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import json
 
-name = "金属功能材料"
+name = "粉末冶金工业"
 
 target_file = open(name + ".json", "r")
 target_json = target_file.read()
@@ -25,17 +25,17 @@ for site in target_sites:
 
     driver.get(site)
     
-    temp['title_cn'] = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[@class='J_biaoti']"))).text
-    temp['author_cn'] = driver.find_element_by_xpath("//td[@class='J_author_cn']").text
-    temp['org_cn'] = driver.find_element_by_xpath("//span[@class='J_author_dizhi']").text
-    temp['abstract_cn'] = driver.find_element_by_xpath("//span[@class='J_zhaiyao']").text
-    keywords_cn = []
-    keywords_cn_elements = driver.find_elements_by_xpath("//td/b[contains(text(),'关键词')]/../a")
-    for keyword_cn_element in keywords_cn_elements:
-        keywords_cn.append(keyword_cn_element.text)
-    temp['keywords_cn'] = keywords_cn
-    
     try:
+        temp['title_cn'] = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[@class='J_biaoti']"))).text
+        temp['author_cn'] = driver.find_element_by_xpath("//td[@class='J_author_cn']").text
+        temp['org_cn'] = driver.find_element_by_xpath("//span[@class='J_author_dizhi']").text
+        temp['abstract_cn'] = driver.find_element_by_xpath("//span[@class='J_zhaiyao']").text
+        keywords_cn = []
+        keywords_cn_elements = driver.find_elements_by_xpath("//td/b[contains(text(),'关键词')]/../a")
+        for keyword_cn_element in keywords_cn_elements:
+            keywords_cn.append(keyword_cn_element.text)
+        temp['keywords_cn'] = keywords_cn
+    
         temp['title_en'] = driver.find_element_by_xpath("//span[@class='J_biaoti_en']").text
         temp['abstract_en'] = driver.find_element_by_xpath("//span[@class='J_zhaiyao_en']").text
         keywords_en = []
