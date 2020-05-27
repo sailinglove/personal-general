@@ -26,10 +26,10 @@ for site in target_sites:
     driver.get(site)
     
     try:
-        temp['title_cn'] = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[@class='J_biaoti']"))).text
+        temp['title_cn'] = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, "//span[@class='J_biaoti']"))).text
         temp['author_cn'] = driver.find_element_by_xpath("//td[@class='J_author_cn']").text
-        temp['org_cn'] = driver.find_element_by_xpath("//span[@class='J_author_dizhi']").text
-        temp['abstract_cn'] = driver.find_element_by_xpath("//span[@class='J_zhaiyao']").text
+        temp['org_cn'] = driver.find_element_by_xpath("//td[@style='line-height:130%' and 1]").text
+        temp['abstract_cn'] = driver.find_element_by_xpath("//td[@class='J_zhaiyao' and 1]").text
         keywords_cn = []
         keywords_cn_elements = driver.find_elements_by_xpath("//td/b[contains(text(),'关键词')]/../a")
         for keyword_cn_element in keywords_cn_elements:
@@ -37,16 +37,18 @@ for site in target_sites:
         temp['keywords_cn'] = keywords_cn
     
         temp['title_en'] = driver.find_element_by_xpath("//span[@class='J_biaoti_en']").text
-        temp['abstract_en'] = driver.find_element_by_xpath("//span[@class='J_zhaiyao_en']").text
+        temp['author_en'] = driver.find_element_by_xpath("//td[@class='J_author_en']").text
+        temp['org_en'] = driver.find_element_by_xpath("//td[@class='line-height:130%' and 2]")
+        # temp['abstract_en'] = driver.find_element_by_xpath("//span[@class='J_zhaiyao']/b[contains(text(),'Abstract')]/..").text
         keywords_en = []
-        keywords_en_elements = driver.find_elements_by_xpath("//td/b[contains(text(),'Key')]/../a")
+        keywords_en_elements = driver.find_elements_by_xpath("//td/span/b[contains(text(),'Key')]/../a")
         for keyword_en_element in keywords_en_elements:
             keywords_en.append(keyword_en_element.text)
         temp['keywords_en'] = keywords_en
     except:
         pass
 
-    temp['citation'] = driver.find_element_by_xpath("//td[@class='J_zhaiyao_en']").text
+    # temp['citation'] = driver.find_element_by_xpath("//td[@class='J_zhaiyao_en']").text
 
     print(temp)
 
