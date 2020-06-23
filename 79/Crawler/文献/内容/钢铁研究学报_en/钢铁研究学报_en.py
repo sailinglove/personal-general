@@ -48,6 +48,8 @@ for site in target_sites:
         temp['keywords_en'] = keywords_en
 
         temp['citation'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[2]/tbody/tr[2]/td").text
+        temp['date'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[6]/td").text
+        temp['author_intro'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[7]/td/span").text
     except TimeoutException:
         temp = "Faulty webpage"
     except:

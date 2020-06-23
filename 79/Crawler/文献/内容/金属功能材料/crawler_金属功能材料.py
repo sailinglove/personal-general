@@ -43,10 +43,11 @@ for site in target_sites:
         for keyword_en_element in keywords_en_elements:
             keywords_en.append(keyword_en_element.text)
         temp['keywords_en'] = keywords_en
+        temp['citation'] = driver.find_element_by_xpath("//td[@class='J_zhaiyao_en']").text
+        temp['date'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[6]/td").text
+        temp['author_intro'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[7]/td/span").text
     except:
         pass
-
-    temp['citation'] = driver.find_element_by_xpath("//td[@class='J_zhaiyao_en']").text
 
     print(temp)
 

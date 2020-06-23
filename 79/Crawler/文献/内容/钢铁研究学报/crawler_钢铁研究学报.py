@@ -45,6 +45,8 @@ for site in target_sites:
         temp['keywords_en'] = keywords_en
 
         temp['citation'] = driver.find_element_by_xpath("//td[@class='txt_12' and contains(text(), '钢铁研究学报')]").text
+        temp['date'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[6]/td").text
+        temp['author_intro'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[7]/td/span").text
     except:
         pass
 
