@@ -5,9 +5,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 import json
 
+relative_path = "79\\Crawler\\文献\\内容\\钢铁研究学报_en\\"
 name = "钢铁研究学报_en"
 
-target_file = open(name + ".json", "r")
+target_file = open(relative_path + name + ".json", "r")
 target_json = target_file.read()
 target_file.close()
 target_sites = json.loads(target_json)
@@ -63,5 +64,5 @@ for site in target_sites:
 
 driver.quit()
 
-with open("result_" + name + ".json", "w") as f_obj:
+with open(relative_path + "result_" + name + ".json", "w") as f_obj:
     json.dump(result, f_obj)

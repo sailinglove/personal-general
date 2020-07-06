@@ -6,9 +6,10 @@ import urllib.request
 import urllib.error
 import json
 
+relative_path = "79\\Crawler\\文献\\内容\\轧钢\\"
 name = "轧钢"
 
-target_file = open(name + ".json", "r")
+target_file = open(relative_path + name + ".json", "r")
 target_json = target_file.read()
 target_file.close()
 target_sites = json.loads(target_json)
@@ -59,6 +60,8 @@ for site in target_sites:
                 keywords_en.append(keyword_en_element.text)
             temp['keywords_en'] = keywords_en
             temp['citation'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[2]/tbody/tr[2]/td").text
+            temp['date'] = driver.find_element_by_xpath("//td[@class='J_zhaiyao']/strong[contains(text(), '日期')]/..").text
+            temp['author_intro'] = driver.find_element_by_xpath("//*[@id='abstract_tab_content']/table[1]/tbody/tr[7]/td/span").text
         except:
             pass
     
@@ -70,6 +73,6 @@ for site in target_sites:
 
 driver.quit()
 
-with open("result_" + name + ".json", "w") as f_obj:
+with open(relative_path + "result_" + name + ".json", "w") as f_obj:
     json.dump(result, f_obj)
     f_obj.close()
