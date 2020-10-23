@@ -3,5 +3,7 @@
         "cmath": "cpp",
         "iomanip": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.snippetsPreventQuickSuggestions": false
 }
