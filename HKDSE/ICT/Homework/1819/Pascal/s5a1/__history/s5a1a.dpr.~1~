@@ -1,0 +1,104 @@
+program s5a1a;
+  (*Programmer Name  : Ivan Xiang
+    Class            : S.5B
+    Class No.        : 31
+    Compiling Date   : 21st Sept., 2018
+    Program File Name: s5a1a.pas
+    Purpose          : This program accept the name, sex and HKID no. of the
+                       user and display whethwe the user has input a valid or
+                       invalid HKID no.*)
+
+var  //global varibles of this program
+  n, id, idn : string;  //n: name of the user; id: HKID no. of the user, idn
+  s, con : char;
+  i, idc : integer;
+  valid : boolean;
+
+procedure init;
+  begin
+    con := 'y';
+    valid := true;
+  end;
+
+procedure name;
+  var
+    i : integer;
+  begin
+  write('Enter your name : ');
+      readln(n);
+      for i := 1 to length(n) do
+        if (n[i] >= 'a') and (n[i] <= 'z') then
+          n[i] := chr( ord(n[i]) - 32 );
+  end;
+
+procedure sex;
+  begin
+    repeat
+      write('Enter your sex : ');
+      readln(s);
+    until (s = 'f') or (s = 'F') or (s = 'm') or (s = 'M');
+  end;
+
+procedure chkDig(cid : string; var v : boolean);
+  var
+    num : array[1..8] of integer;
+    i, err, j, sum : integer;
+  begin
+    num[8] := ord(cid[1]) - 64;
+    j := 2;
+    for i := 7 downto 2 do
+      begin
+        val(cid[j], num[i], err);
+        j := j + 1;
+      end;
+    val(cid[9], num[1], err);
+    sum := 0;
+    for i := 8 downto 1 do
+      sum := sum + (num[i] * i);
+    if (sum mod 11) <> 0 then
+      v := false;
+  end;
+
+procedure hkid;
+  begin
+    write('Enter your HKID : ');
+    readln(id);
+    if length(id) <> 10 then
+      valid := false;
+    if (id[1] <= 'A') or (id[1] >= 'Z') then
+      valid := false;
+    if (id[8] <> '(') or (id[10] <> ')') then
+      valid := false;
+    idn := copy(id, 2, 6) + id[9];
+    val(idn, i, idc);
+    if idc <> 0 then
+      valid := false;
+    chkDig(id, valid);
+  end;
+
+procedure mes(na : string; se : char; va : boolean);
+  begin
+    if (se = 'f') or (se = 'F') then
+      write('Miss')
+    else
+      write('Mr.');
+    write(na, ' has entered ');
+    if va = false then
+      write('an invalid')
+    else
+      write('a valid');
+    writeln(' HK ID no.');
+  end;
+
+begin
+  init;
+  while (con = 'y') or (con = 'y') do
+    begin
+      name;
+      sex;
+      hkid;
+      mes(n, s, valid);
+      write('Continus (Y/N) ? ');
+      readln(con);
+    end;
+end.

@@ -1,0 +1,32 @@
+program s5a2b;
+
+var
+  input : string;
+
+procedure validation(s : string);
+  var
+    valid : boolean;
+
+  begin
+    if s
+  end;
+
+begin
+  repeat
+    write('Enter a function with parameter (cos/sin/exp/exit) : ');
+    readln(input);
+    if copy(input, 1, 3) = 'cos' then
+
+    else
+      if copy(input, 1, 3) = 'sin' then
+
+      else
+        if copy(input, 1, 3) = 'exp' then
+
+        else
+          writeln('Invalid function!!!');
+  until input = 'exit';
+  writeln('Goodbye!!!');
+  readln
+end.
+

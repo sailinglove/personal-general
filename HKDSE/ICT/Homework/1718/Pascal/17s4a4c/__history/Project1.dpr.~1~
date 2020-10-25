@@ -1,0 +1,55 @@
+program chessboardGenerator;
+
+uses
+  Crt;
+
+var
+  lineThick, size, h, w : integer;
+
+begin
+  repeat
+  write('(1) Single-lined or (2)Double-lined : ');
+  readln(lineThick);
+  until (lineThick = 1) or (lineThick = 2);
+
+  repeat
+  write('Size of the board (1-10) : ');
+  readln(size);
+  until (size >= 1) and (size <= 10);
+
+  ClrScr;
+
+  if lineThick = 1 then
+    begin
+      for h := (size - 1) downto 0 do
+        begin
+          for w := (size - 1) downto 0 do
+            write('+---');
+          writeln('+');
+          for w := (size - 1) downto 0 do
+            write('|   ');
+          writeln('|');
+
+        end;
+      for w := (size - 1) downto 0 do
+            write('+---');
+          writeln('+');
+    end
+  else
+    begin
+      for h := (size - 1) downto 0 do
+        begin
+          for w := (size - 1) downto 0 do
+            write('#===');
+          writeln('#');
+          for w := (size - 1) downto 0 do
+            write('|   ');
+          writeln('|');
+
+        end;
+      for w := (size - 1) downto 0 do
+            write('#===');
+          writeln('#');
+    end;
+  readln
+end.

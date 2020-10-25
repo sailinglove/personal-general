@@ -1,0 +1,65 @@
+program s5a1a;
+
+var
+  id, idn : string;
+  con : char;
+  i, idc : integer;
+  valid : boolean;
+
+procedure init;
+  begin
+    con := 'y';
+    valid := true;
+  end;
+
+procedure name;
+  var
+    i : integer;
+    n : string;
+  begin
+  write('Enter your name : ');
+      readln(n);
+      for i := 1 to length(n) do
+        if (n[i] >= 'a') and (n[i] <= 'z') then
+          n[i] := chr( ord(n[i]) - 32 );
+      writeln(n);
+  end;
+
+procedure sex;
+  var
+    s : char;
+  begin
+    repeat
+      write('Enter your sex : ');
+      readln(s);
+    until (s = 'f') or (s = 'F') or (s = 'm') or (s = 'M');
+    writeln(s);
+  end;
+
+begin
+
+  while (con = 'y') or (con = 'y') do
+    begin
+      name;
+      sex;
+
+      write('Enter your HKID : ');
+      readln(id);
+      if length(id) <> 10 then
+        valid := false;
+      if (id[1] <= 'A') or (id[1] >= 'Z') then
+        valid := false;
+      if (id[8] <> '(') or (id[10] <> ')') then
+        valid := false;
+      idn := copy(id, 2, 6) + id[9];
+      val(idn, i, idc);
+      if idc <> 0 then
+        valid := false;
+
+
+
+      write('Continus (Y/N) ? ');
+      readln(con);
+    end;
+  readln
+end.

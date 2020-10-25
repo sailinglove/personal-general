@@ -1,0 +1,54 @@
+program s5a1b;
+
+var
+  input, s1, s2 : string;
+  i : integer;
+
+procedure validation;
+  var
+    valid : boolean;
+    valv, err : integer;
+  begin
+    valid := true;
+    if (s1 <> 'sin') and (s1 <> 'cos') and (s1 <> 'exp') then
+      begin
+        writeln('Invalid function!!!');
+        exit;
+      end;
+    if (input[4] <> '(') or (input[length(input)] <> ')') then
+      valid := false;
+    val(s2, valv, err);
+    if err <> 0 then
+      valid := false;
+    if valid = false then
+      writeln('Invalid format!!!');
+  end;
+
+function a2r(a : integer) : integer;
+  begin
+    a2r := (180 / pi) * a;
+  end;
+
+procedure cos;
+  begin
+    if s1 = 'cos' then
+      begin
+
+      end;
+  end;
+
+begin
+  repeat
+    write('Enter a function with parameter (cos/sin/exp/exit) : ');
+    readln(input);
+    s1 := copy(input, 1, 3);
+    s2 := copy(input, 5, length(input) - 5);
+    if input = 'exit' then
+      break;
+    validation(input, s1, s2);
+  until false;
+  write('Goodbye!!!');
+  for i := 1 to 777777777 do
+    write;
+end.
+

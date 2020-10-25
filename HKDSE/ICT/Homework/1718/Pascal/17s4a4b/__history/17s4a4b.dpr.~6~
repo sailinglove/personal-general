@@ -1,0 +1,21 @@
+program hcmLcmCalculator;
+
+var
+ a, b, c, hcf : integer;
+
+begin
+  write('Enter 3 positive integer : ');
+  readln(a, b, c);
+  if (a < 1) or (b < 0) or (c < 0) then
+    writeln('Please only enter positive values!!');
+  if a < b then
+    hcf := a
+  else
+    hcf := b;
+  if c < hcf then
+    hcf := c;
+  while not((a mod hcf = 0) and (b mod hcf = 0) and (c mod hcf = 0)) do
+    hcf := hcf - 1;
+  writeln('The highest common factor is ', hcf);
+  readln
+end.
