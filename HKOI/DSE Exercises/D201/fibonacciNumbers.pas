@@ -10,6 +10,7 @@ begin
   else if X > 0 then
     fibonacciX := 1
   else fibonacciX := 0;
+  WriteLn(fibonacciX);
 end;
 
 begin
