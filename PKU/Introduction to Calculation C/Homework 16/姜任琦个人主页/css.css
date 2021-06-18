@@ -1,0 +1,38 @@
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+a:link {
+	color: #8392B1;
+}
+a:visited {
+	color: #3B4E92;
+}
+
+.center_p {
+	text-align: center;
+}
+
+#top {
+	background-color: #667387;
+	color: #F0BFA9;
+}
+
+#left {
+	background-color: #F0BFA9;
+	color: #667387;
+}
+
+#self {
+	background-color: #FFEDEA;
+	color: #C6AF9E;
+}
+
+#home {
+	background-color: #FFEDEA;
+	color: #B07B58
+}
