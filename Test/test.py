@@ -1,7 +1,5 @@
-s = 5
-
-students = [50, 23, 67, 89, 43]
-
-total = 0
-for i in range(s):
-    total = total + students[i]
+i = 0
+while i < 10:
+    if i < 1:
+        continue
+    i += 1
