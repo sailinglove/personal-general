@@ -14,7 +14,8 @@ result = {}
 # Headless
 option = webdriver.ChromeOptions()
 option.add_argument('headless')
-driver = webdriver.Chrome(chrome_options=option)
+option.add_experimental_option('excludeSwitches', ['enable-logging'])
+driver = webdriver.Chrome(options=option)
 # driver.set_page_load_timeout(10)
 
 
@@ -27,7 +28,7 @@ driver.execute_script("window.open('')")
 window_hospital = driver.window_handles[1]
 driver.execute_script("window.open('')")
 window_department = driver.window_handles[2]
-driver.switch_to_window(window_province)
+driver.switch_to.window(window_province)
 
 for province in driver.find_elements_by_xpath("//*[@id='el_tree_1000000']/div/a"):
     province_links[province.text] = province.get_attribute("href")
@@ -35,13 +36,13 @@ print(province_links)
 
 # per province
 for province in province_links.keys():
-    driver.switch_to_window(window_province)
+    driver.switch_to.window(window_province)
     driver.get(province_links[province])
     # get cities
     for city in driver.find_elements_by_xpath("//div[@class='m_title_green']"):
-        if city.text in ["朝阳", "海淀"]:
+        driver.switch_to.window(window_province)
+        if city.text in ["朝阳", "海淀", "西城"]:
             continue
-        driver.switch_to_window(window_province)
         hospital_link = {}
         city_name = city.text
         file_name = relative_path + name + "{}_{}.csv".format(province, city_name)
@@ -55,25 +56,27 @@ for province in province_links.keys():
                 hospital_link[hospital.text] = hospital.get_attribute("href")
             print(hospital_link)
             for hospital in hospital_link.keys():
-                if hospital in ["北京大学第一医院", "北京大学人民医院", "宣武医院", "北京友谊医院"]:
-                    continue
-                driver.switch_to_window(window_hospital)
+                # if hospital in ["北京大学第一医院", "北京大学人民医院", "宣武医院", "北京友谊医院", "阜外医院", "北京儿童医院", "北京积水潭医院", "广安门医院", "首都医科大学附属复兴医院", "火箭军特色医学中心", "北京安定医院", "护国寺中医院", "北京市肛肠医院", "解放军305医院", "北大口腔医院第一门诊部", "宣武中医院"]:
+                #     continue
+                driver.switch_to.window(window_hospital)
                 driver.get(hospital_link[hospital])
                 # get faculties
                 for faculty in driver.find_elements_by_xpath("//*[@class='f-l-i-name']"):
-                    driver.switch_to_window(window_hospital)
+                    driver.switch_to.window(window_hospital)
                     department_links = {}
                     faculty_name = faculty.text
-                    if faculty_name != "其他":
-                        continue
+                    # if faculty_name != "其他":
+                    #     continue
                     print(faculty_name)
                     # get departments
                     for department in driver.find_elements_by_xpath("//*[div='" + faculty_name + "']//div/a"):
                         department_links[department.text] = department.get_attribute("href")
                     print(department_links)
                     for department in department_links.keys():
+                        # if department in ["按摩科"]:
+                        #     continue
                         temp_html = department_links[department][:-4]
-                        driver.switch_to_window(window_department)
+                        driver.switch_to.window(window_department)
                         driver.get(department_links[department])
                         try:
                             pages = int(driver.find_element_by_xpath("//div[@class='p_bar']/a[contains(text(), '共')]").text[2:-2])
@@ -88,9 +91,8 @@ for province in province_links.keys():
                         print(doctor_links, len(doctor_links))
                         # get doctor's info
                         for doctor in doctor_links.keys():
-                            if department == "体外循环科":
-                                if doctor in ["吉冰洋", "龙村", "于坤", "刘晋萍", "赵举", "黑飞龙", "高国栋", "楼松", "胡强"]:
-                                    continue
+                            # if doctor in ["黄诚", "陈乃龙", "齐鸿", "刘畅", "王友仁", "杨金斗", "韦景斌", "郝学茂", "金涛", "王海龙", "郑庆山", "郝金贵", "黄曼博", "贾晓格"]:
+                            #     continue
                             driver.get(doctor_links[doctor])
                             temp_doctor = {}
                             doctor_list = [doctor, province, city_name, hospital, faculty_name, department]
