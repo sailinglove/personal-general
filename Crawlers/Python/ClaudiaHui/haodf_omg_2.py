@@ -57,8 +57,8 @@ for province in province_links.keys():
                     hospital_link[hospital.text] = hospital.get_attribute("href")
                 print(hospital_link)
                 for hospital in hospital_link.keys():
-                    # if hospital in ["北京大学第一医院", "北京大学人民医院", "宣武医院", "北京友谊医院", "阜外医院", "北京儿童医院", "北京积水潭医院", "广安门医院", "首都医科大学附属复兴医院", "火箭军特色医学中心", "北京安定医院", "护国寺中医院", "北京市肛肠医院", "解放军305医院", "北大口腔医院第一门诊部", "宣武中医院"]:
-                    #     continue
+                    if hospital in ["福建省立医院", "福建医科大学附属第一医院", "福建医科大学附属协和医院", "中国人民解放军联勤保障部队第九〇〇医院", "厦门大学附属福州第二医院", "福建省人民医院", "福建中医药大学附属第二人民医院", "福建省妇幼保健院", "福州市第一医院", "福建省肿瘤医院", "福建医科大学附属口腔医院"]:
+                        continue
                     driver.switch_to.window(window_hospital)
                     driver.get(hospital_link[hospital])
                     # get faculties
@@ -66,19 +66,21 @@ for province in province_links.keys():
                         driver.switch_to.window(window_hospital)
                         department_links = {}
                         faculty_name = faculty.text
-                        # if faculty_name != "其他":
-                        #     continue
+                        if hospital == "福建省立金山医院":
+                            if faculty_name != "其他":
+                                continue
                         print(faculty_name)
                         # get departments
                         for department in driver.find_elements_by_xpath("//*[div='" + faculty_name + "']//div/a"):
                             department_links[department.text] = department.get_attribute("href")
                         print(department_links)
                         for department in department_links.keys():
-                            # if department in ["按摩科"]:
-                            #     continue
                             temp_html = department_links[department][:-4]
                             driver.switch_to.window(window_department)
                             driver.get(department_links[department])
+                            if hospital == "福建省立金山医院":
+                                if department in ["中医科", "口腔科", "康复科"]:
+                                    continue
                             try:
                                 pages = int(driver.find_element_by_xpath("//div[@class='p_bar']/a[contains(text(), '共')]").text[2:-2])
                             except:

@@ -41,7 +41,7 @@ for province in province_links.keys():
     # get cities
     for city in driver.find_elements_by_xpath("//div[@class='m_title_green']"):
         driver.switch_to.window(window_province)
-        if city.text in ["朝阳", "海淀", "西城"]:
+        if city.text in ["朝阳", "海淀", "西城", "东城"]:
             continue
         hospital_link = {}
         city_name = city.text
@@ -56,25 +56,26 @@ for province in province_links.keys():
                 hospital_link[hospital.text] = hospital.get_attribute("href")
             print(hospital_link)
             for hospital in hospital_link.keys():
-                # if hospital in ["北京大学第一医院", "北京大学人民医院", "宣武医院", "北京友谊医院", "阜外医院", "北京儿童医院", "北京积水潭医院", "广安门医院", "首都医科大学附属复兴医院", "火箭军特色医学中心", "北京安定医院", "护国寺中医院", "北京市肛肠医院", "解放军305医院", "北大口腔医院第一门诊部", "宣武中医院"]:
-                #     continue
                 driver.switch_to.window(window_hospital)
+                # if hospital in ["北京协和医院", "北京同仁医院", "北京医院", "北京中医医院"]:
+                #     continue
                 driver.get(hospital_link[hospital])
                 # get faculties
                 for faculty in driver.find_elements_by_xpath("//*[@class='f-l-i-name']"):
                     driver.switch_to.window(window_hospital)
                     department_links = {}
                     faculty_name = faculty.text
-                    # if faculty_name != "其他":
-                    #     continue
+                    if faculty_name != "其他":
+                        continue
                     print(faculty_name)
                     # get departments
                     for department in driver.find_elements_by_xpath("//*[div='" + faculty_name + "']//div/a"):
                         department_links[department.text] = department.get_attribute("href")
                     print(department_links)
                     for department in department_links.keys():
-                        # if department in ["按摩科"]:
-                        #     continue
+                        if hospital == "东直门医院":
+                            if department in ["肾病内分泌科"]:
+                                continue
                         temp_html = department_links[department][:-4]
                         driver.switch_to.window(window_department)
                         driver.get(department_links[department])
@@ -91,10 +92,8 @@ for province in province_links.keys():
                         print(doctor_links, len(doctor_links))
                         # get doctor's info
                         for doctor in doctor_links.keys():
-                            # if doctor in ["黄诚", "陈乃龙", "齐鸿", "刘畅", "王友仁", "杨金斗", "韦景斌", "郝学茂", "金涛", "王海龙", "郑庆山", "郝金贵", "黄曼博", "贾晓格"]:
-                            #     continue
+                            # if doctor in ["刘利民", "徐萌", "刘佳琪", "高雁冰", "毛森", "李明炬"]:
                             driver.get(doctor_links[doctor])
-                            temp_doctor = {}
                             doctor_list = [doctor, province, city_name, hospital, faculty_name, department]
                             try:
                                 doctor_list.append(driver.find_element_by_xpath("//*[@class='doctor-title']").text)

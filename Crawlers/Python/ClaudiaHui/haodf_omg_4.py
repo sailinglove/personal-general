@@ -41,9 +41,9 @@ for province in province_links.keys():
         driver.get(province_links[province])
         # get cities
         for city in driver.find_elements_by_xpath("//div[@class='m_title_green']"):
-            # if city.text in ["朝阳", "海淀"]:
-            #     continue
             driver.switch_to.window(window_province)
+            if city.text in ["乌鲁木齐", "伊犁"]:
+                continue
             hospital_link = {}
             city_name = city.text
             file_name = relative_path + name + "{}_{}.csv".format(province, city_name)
@@ -57,10 +57,10 @@ for province in province_links.keys():
                     hospital_link[hospital.text] = hospital.get_attribute("href")
                 print(hospital_link)
                 for hospital in hospital_link.keys():
-                    # if hospital in ["北京大学第一医院", "北京大学人民医院", "宣武医院", "北京友谊医院", "阜外医院", "北京儿童医院", "北京积水潭医院", "广安门医院", "首都医科大学附属复兴医院", "火箭军特色医学中心", "北京安定医院", "护国寺中医院", "北京市肛肠医院", "解放军305医院", "北大口腔医院第一门诊部", "宣武中医院"]:
-                    #     continue
                     driver.switch_to.window(window_hospital)
                     driver.get(hospital_link[hospital])
+                    if hospital in ["喀什地区第一人民医院", "喀什地区第二人民医院", "莎车县人民医院", "巴楚县人民医院", "岳普湖县人民医院", "喀什市人民医院", "农三师医院", "伽师县人民医院"]:
+                        continue
                     # get faculties
                     for faculty in driver.find_elements_by_xpath("//*[@class='f-l-i-name']"):
                         driver.switch_to.window(window_hospital)
