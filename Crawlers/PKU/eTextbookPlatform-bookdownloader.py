@@ -1,8 +1,8 @@
 import re
 import requests
 
-BASE_URL = r'http://162.105.138.126/OnLineReader/command/imagepage.ashx?objID=obj201311277qul6pld3rihackc0000054767&metaId=u.meta20131101utk07qul6pld0000056185&OrgId=apabi_usp&Ip=undefined&scale=4.182993668076062&width=3562&height=4537&pageid=1&ServiceType=Imagepage&scaleType=1&OrWidth=612.480009126663&OrHeight=845.760012602806&testres=&debug=&SessionId=4B90CECAC476BD93&UserName=%E5%90%91%E4%B8%80%E5%B8%86&cult=CN&rights=1-0_00&time=2021-09-15%2013:39:08&sign=18F5BF20F7B9C0665E9C5DF7E287C9D2';
-PATTERN = re.compile(r'(?<=&pageid=)\d+(?=&)');
+BASE_URL = r'	http://cebxol.apabiedu.com/api/getservice?orgid=pku&ObjId=ISBN7-81092-014-6.ft.CEBX.1&UserName=%E6%9D%A5%E8%87%AA%2B%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%9B%BE%E4%B9%A6%E9%A6%86%2B%E7%9A%84%E7%94%A8%E6%88%B7&MetaId=ISBN7-81092-014-6&cult=CN&dbsource=dlib&Time=2021/11/25 5:00:06&Sign=01D8BAB39F15A83362FB7831B48CEB66&Rights=1-0_00&width=2562&height=3537&page=1&ServiceType=imagepage';
+PATTERN = re.compile(r'(?<=&page=)\d+(?=&)');
 
 i = 1;
 while True:
