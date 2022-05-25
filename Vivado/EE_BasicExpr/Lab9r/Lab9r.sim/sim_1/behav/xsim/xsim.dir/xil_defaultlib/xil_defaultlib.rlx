@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sim_1/new/top_tb.v,1653127802,verilog,,,,top_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/8-bit_reg.v,1653126752,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/BaudGen.v,,reg_8bit,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/BaudGen.v,1653121729,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/FSM.v,,BaudGen,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/FSM.v,1653123516,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/LS163.v,,FSM,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/LS163.v,1653122127,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/LS164.v,,LS163,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/LS164.v,1653121350,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/LS74.v,,LS164,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/LS74.v,1653122451,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v,,LS74,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v,1653128065,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sim_1/new/top_tb.v,,Top,,,,,,,,

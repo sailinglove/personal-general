@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sim_1/new/receiver_tb.v,1653026577,verilog,,,,receiver_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/BaudGen.v,1652888630,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/DFF_74LS74.v,,BaudGen,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/DFF_74LS74.v,1652886513,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/Receiver.v,,DFF_74LS74,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/Receiver.v,1653026881,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/Register.v,,Receiver,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/Register.v,1652949482,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/counter_74LS163.v,,Register,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/counter_74LS163.v,1652417610,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/shift_register_74LS164.v,,counter_74LS163,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/shift_register_74LS164.v,1652413829,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/state_controller.v,,shift_register_74LS164,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sources_1/new/state_controller.v,1653017012,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9_y/Lab9_UART.srcs/sim_1/new/receiver_tb.v,,state_controller,,,,,,,,

@@ -1,0 +1,26 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 63655f4620ce47bf8b1b2a2c3e7e1622 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'LD_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v:32]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ENP' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PR_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/FSM.v:16]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'LD_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v:45]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'LD_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/Top.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PR_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/Lab9r/Lab9r.srcs/sources_1/new/FSM.v:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.BaudGen
+Compiling module xil_defaultlib.LS163
+Compiling module xil_defaultlib.LS164
+Compiling module xil_defaultlib.LS74
+Compiling module xil_defaultlib.reg_8bit_default
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav

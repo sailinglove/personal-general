@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sim_1/new/FSM_tb.v,1653120234,verilog,,,,FSM_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sim_1/new/LS163_tb.v,1653069858,verilog,,,,LS163_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4069.v,1653033929,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4073.v,,CD4069,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4073.v,1653033117,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4075.v,,CD4073,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4075.v,1653116076,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4082.v,,CD4075,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/CD4082.v,1653033901,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/FSM.v,,CD4082,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/FSM.v,1653116708,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/LS74.v,,FSM,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/FSM_wtf.v,1653120214,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/LS74.v,,FSM_wtf,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/LS163.v,1653067485,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sim_1/new/LS163_tb.v,,LS163,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sources_1/new/LS74.v,1653117519,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab9/lab9.srcs/sim_1/new/FSM_tb.v,,LS74,,,,,,,,

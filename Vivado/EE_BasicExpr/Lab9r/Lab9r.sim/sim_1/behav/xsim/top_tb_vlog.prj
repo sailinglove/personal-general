@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab9r.srcs/sources_1/new/8-bit_reg.v" \
+"../../../../Lab9r.srcs/sources_1/new/BaudGen.v" \
+"../../../../Lab9r.srcs/sources_1/new/FSM.v" \
+"../../../../Lab9r.srcs/sources_1/new/LS163.v" \
+"../../../../Lab9r.srcs/sources_1/new/LS164.v" \
+"../../../../Lab9r.srcs/sources_1/new/LS74.v" \
+"../../../../Lab9r.srcs/sources_1/new/Top.v" \
+"../../../../Lab9r.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
