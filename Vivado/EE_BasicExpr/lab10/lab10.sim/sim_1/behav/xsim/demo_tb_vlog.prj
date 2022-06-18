@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab10.srcs/sources_1/imports/new/LS163.v" \
+"../../../../lab10.srcs/sources_1/new/LS573.v" \
+"../../../../lab10.srcs/sources_1/imports/new/LS74.v" \
+"../../../../lab10.srcs/sources_1/new/counter_8bits.v" \
+"../../../../lab10.srcs/sources_1/new/FSM.v" \
+"../../../../lab10.srcs/sources_1/new/clk_500k.v" \
+"../../../../lab10.srcs/sources_1/new/top.v" \
+"../../../../lab10.srcs/sources_1/new/LS573_be.v" \
+"../../../../lab10.srcs/sources_1/new/demo.v" \
+"../../../../lab10.srcs/sources_1/new/nFlagGen.v" \
+"../../../../lab10.srcs/sim_1/new/FSM_tb.v" \
+"../../../../lab10.srcs/sim_1/new/LS573_tb.v" \
+"../../../../lab10.srcs/sim_1/new/counter_8bits_tb.v" \
+"../../../../lab10.srcs/sim_1/new/clk_500k_tb.v" \
+"../../../../lab10.srcs/sim_1/new/top_tb.v" \
+"../../../../lab10.srcs/sim_1/new/nFlagGen_tb.v" \
+"../../../../lab10.srcs/sim_1/new/demo_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

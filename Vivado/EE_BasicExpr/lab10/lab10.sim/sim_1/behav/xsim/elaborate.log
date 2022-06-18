@@ -1,0 +1,36 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 81891502aacc45f2a10b1f60259ef9ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PR_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/FSM.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'LD_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'OE_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/top.v:30]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'PR_L' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/FSM.v:39]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v" Line 1. Module demo doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/clk_500k.v" Line 1. Module clk_500k doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/nFlagGen.v" Line 1. Module nFlagGen doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/FSM.v" Line 1. Module FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS74.v" Line 2. Module LS74 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS74.v" Line 2. Module LS74 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/counter_8bits.v" Line 1. Module counter_8bits doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS163.v" Line 2. Module LS163 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS163.v" Line 2. Module LS163 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/LS573_be.v" Line 1. Module LS573_be doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_500k
+Compiling module xil_defaultlib.nFlagGen
+Compiling module xil_defaultlib.LS74
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.LS163
+Compiling module xil_defaultlib.counter_8bits
+Compiling module xil_defaultlib.LS573_be
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.demo
+Compiling module xil_defaultlib.demo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot demo_tb_behav

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="demo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="demo_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1271888333334fs"></ZoomStartTime>
+      <ZoomEndTime time="1308528333335fs"></ZoomEndTime>
+      <Cursor1Time time="1294995000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="196"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/demo_tb/inst_demo/inst_clk/new_clk" type="logic">
+      <obj_property name="ElementShortName">new_clk</obj_property>
+      <obj_property name="ObjectShortName">new_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/EnSample" type="logic">
+      <obj_property name="ElementShortName">EnSample</obj_property>
+      <obj_property name="ObjectShortName">EnSample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/ClearInt" type="logic">
+      <obj_property name="ElementShortName">ClearInt</obj_property>
+      <obj_property name="ObjectShortName">ClearInt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/SigOn" type="logic">
+      <obj_property name="ElementShortName">SigOn</obj_property>
+      <obj_property name="ObjectShortName">SigOn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/RefOn" type="logic">
+      <obj_property name="ElementShortName">RefOn</obj_property>
+      <obj_property name="ObjectShortName">RefOn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/inst_demo/inst_top/nFlag" type="logic">
+      <obj_property name="ElementShortName">nFlag</obj_property>
+      <obj_property name="ObjectShortName">nFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/inst_demo/inst_top/cntOut" type="array">
+      <obj_property name="ElementShortName">cntOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cntOut[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/demo_tb/inst_demo/inst_nFlagGen/counter" type="array">
+      <obj_property name="ElementShortName">counter[8:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

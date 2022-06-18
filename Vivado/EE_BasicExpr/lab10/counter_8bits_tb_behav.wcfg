@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="counter_8bits_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="counter_8bits_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2298666666fs"></ZoomStartTime>
+      <ZoomEndTime time="2660266667fs"></ZoomEndTime>
+      <Cursor1Time time="2600000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="137"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/counter_8bits_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/CLR_L" type="logic">
+      <obj_property name="ElementShortName">CLR_L</obj_property>
+      <obj_property name="ObjectShortName">CLR_L</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/LD_L" type="logic">
+      <obj_property name="ElementShortName">LD_L</obj_property>
+      <obj_property name="ObjectShortName">LD_L</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/ENP" type="logic">
+      <obj_property name="ElementShortName">ENP</obj_property>
+      <obj_property name="ObjectShortName">ENP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/ENT" type="logic">
+      <obj_property name="ElementShortName">ENT</obj_property>
+      <obj_property name="ObjectShortName">ENT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/D" type="array">
+      <obj_property name="ElementShortName">D[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/Q" type="array">
+      <obj_property name="ElementShortName">Q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/RCO" type="logic">
+      <obj_property name="ElementShortName">RCO</obj_property>
+      <obj_property name="ObjectShortName">RCO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/clk_period" type="array">
+      <obj_property name="ElementShortName">clk_period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_period[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/inst_counter_8bits/carry1" type="logic">
+      <obj_property name="ElementShortName">carry1</obj_property>
+      <obj_property name="ObjectShortName">carry1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_8bits_tb/inst_counter_8bits/carry2" type="logic">
+      <obj_property name="ElementShortName">carry2</obj_property>
+      <obj_property name="ObjectShortName">carry2</obj_property>
+   </wvobject>
+</wave_config>

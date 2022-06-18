@@ -1,12 +1,9 @@
-`timescale 1ns / 1ps
-
-module BaudGen#(parameter SYS_FREQ = 100_000_000
+module BaudGen #(parameter SYS_FREQ = 100_000_000
 )(
     input clk, rst,
-    output reg Bclk16      //Bclk16 = 16x Bclk
-    //output Bclk,            //
+    output reg Bclk16
     );
-    //reg [3:0] Baud16Count;
+
     reg [10:0] Baud_cnt;
     reg [31:0] bps = 100_000;
     
@@ -22,10 +19,5 @@ module BaudGen#(parameter SYS_FREQ = 100_000_000
             Bclk16 <= ~Bclk16;
             Baud_cnt <= 11'b0;
         end else Baud_cnt <= Baud_cnt + 1'b1;
-        
-//    always @(posedge rst or posedge Bclk16)
-//        if (rst ) Baud16Count <= 4'b0000;
-//        else Baud16Count <= Baud16Count + 1;
-//    assign Bclk = Baud16Count[3];
     
 endmodule

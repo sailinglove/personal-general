@@ -1,0 +1,22 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/FSM_tb.v,1655365977,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/LS573_tb.v,,FSM_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/LS573_tb.v,1654843015,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/counter_8bits_tb.v,,LS573_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/clk_500k_tb.v,1655398210,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/top_tb.v,,clk_500k_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/counter_8bits_tb.v,1655372800,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/clk_500k_tb.v,,counter_8bits_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/demo_tb.v,1654866749,verilog,,,,demo_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/nFlagGen_tb.v,1655475197,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/demo_tb.v,,nFlagGen_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/top_tb.v,1655399973,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/nFlagGen_tb.v,,top_tb,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS163.v,1653122127,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/LS573.v,,LS163,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS74.v,1653122451,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/counter_8bits.v,,LS74,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/FSM.v,1655365873,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/clk_500k.v,,FSM,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/LS573.v,1654842353,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/imports/new/LS74.v,,LS573,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/LS573_be.v,1655376503,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v,,LS573_be,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/clk_500k.v,1655398452,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/top.v,,clk_500k,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/counter_8bits.v,1655372656,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/FSM.v,,counter_8bits,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v,1655471624,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/nFlagGen.v,,demo,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/nFlagGen.v,1655472739,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sim_1/new/FSM_tb.v,,nFlagGen,,,,,,,,
+D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/top.v,1655397136,verilog,,D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/LS573_be.v,,top,,,,,,,,
