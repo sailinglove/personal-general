@@ -10,19 +10,22 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1024001fs"></ZoomEndTime>
-      <Cursor1Time time="199000fs"></Cursor1Time>
+      <ZoomEndTime time="1605575fs"></ZoomEndTime>
+      <Cursor1Time time="260000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <NameColumnWidth column_width="156"></NameColumnWidth>
       <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="12" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="clk500k" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">clk500k</obj_property>
       <obj_property name="ObjectShortName">clk500k</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="rst_IBUF" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
@@ -102,6 +105,14 @@
       <obj_property name="ObjectShortName">u_ila_0_cntOut[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="label">cntOut</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_Load" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_Load</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_Load</obj_property>
+      <obj_property name="label">Load</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

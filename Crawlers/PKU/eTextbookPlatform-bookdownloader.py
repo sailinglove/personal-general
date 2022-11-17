@@ -1,7 +1,7 @@
 import re
 import requests
 
-BASE_URL = r'	http://cebxol.apabiedu.com/api/getservice?orgid=pku&ObjId=ISBN7-81092-014-6.ft.CEBX.1&UserName=%E6%9D%A5%E8%87%AA%2B%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%9B%BE%E4%B9%A6%E9%A6%86%2B%E7%9A%84%E7%94%A8%E6%88%B7&MetaId=ISBN7-81092-014-6&cult=CN&dbsource=dlib&Time=2021/11/25 5:00:06&Sign=01D8BAB39F15A83362FB7831B48CEB66&Rights=1-0_00&width=2562&height=3537&page=1&ServiceType=imagepage';
+BASE_URL = r'http://img.sslibrary.com/n/slib/book/slib/10508288/41715841ddda4eaea640ed73b5a33c56/ad08ab8575f1b46bbcf3c2347a30c8e8.shtml?dxbaoku=false&moocbaoku=false&deptid=487&fav=https%3A%2F%2Fwww.sslibrary.com%2Freader%2Fpdg%2Fpdgreader%3Fd%3D6c75aac2ced3f85220ed779fdcbe35da%26ssid%3D10508288&fenlei=0311050203&spage=1&t=5&username=115.27.202.60&view=-1';
 PATTERN = re.compile(r'(?<=&page=)\d+(?=&)');
 
 i = 1;

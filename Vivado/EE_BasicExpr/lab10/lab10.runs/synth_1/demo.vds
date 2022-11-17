@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Jun 18 15:15:07 2022
-# Process ID: 13672
+# Start of session at: Sat Jun 18 16:05:55 2022
+# Process ID: 9432
 # Current directory: D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.runs/synth_1
 # Command line: vivado.exe -log demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source demo.tcl
 # Log file: D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.runs/synth_1/demo.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4344 
+INFO: Helper process launched with PID 22860 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 363.340 ; gain = 100.246
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 363.996 ; gain = 100.812
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'demo' [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v:1]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v:3]
@@ -54,9 +54,8 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_nFlagGen'. This will prevent further optimization [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v:24]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_clk'. This will prevent further optimization [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v:19]
 INFO: [Synth 8-6155] done synthesizing module 'demo' (9#1) [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/demo.v:1]
-WARNING: [Synth 8-3331] design LS573_be has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 419.691 ; gain = 156.598
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 420.066 ; gain = 156.883
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -69,10 +68,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 419.691 ; gain = 156.598
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 420.066 ; gain = 156.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 419.691 ; gain = 156.598
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 420.066 ; gain = 156.883
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -83,33 +82,33 @@ Parsing XDC File [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_Bas
 Finished Parsing XDC File [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/constrs_1/new/constr.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/demo_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 738.094 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 738.094 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.965 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 742.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 738.094 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 738.094 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 738.094 ; gain = 474.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 738.094 ; gain = 474.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 738.094 ; gain = 474.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 738.094 ; gain = 474.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -133,8 +132,9 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -173,6 +173,11 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module LS573_be 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -189,10 +194,15 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design LS573_be has unconnected port clk
-WARNING: [Synth 8-3331] design LS573_be has unconnected port OE_L
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_15' (FDE) to 'inst_top/inst_LS573/O_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_14' (FDE) to 'inst_top/inst_LS573/O_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_13' (FDE) to 'inst_top/inst_LS573/O_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_12' (FDE) to 'inst_top/inst_LS573/O_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_11' (FDE) to 'inst_top/inst_LS573/O_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_10' (FDE) to 'inst_top/inst_LS573/O_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'inst_top/inst_LS573/O_reg__0i_9' (FDE) to 'inst_top/inst_LS573/O_reg__0i_8'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 738.094 ; gain = 474.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,13 +214,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 741.805 ; gain = 478.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 742.965 ; gain = 479.871
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 741.945 ; gain = 478.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -222,7 +232,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -246,9 +256,8 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/nFlagGen.v:21]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.srcs/sources_1/new/LS573_be.v:11]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -261,7 +270,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -273,25 +282,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -309,57 +318,60 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     3|
-|3     |LUT1   |     5|
-|4     |LUT2   |    17|
+|3     |LUT1   |    29|
+|4     |LUT2   |    19|
 |5     |LUT3   |    11|
 |6     |LUT4   |    12|
 |7     |LUT5   |     7|
 |8     |LUT6   |    10|
 |9     |FDCE   |    11|
 |10    |FDPE   |     1|
-|11    |FDRE   |    25|
+|11    |FDRE   |    26|
 |12    |IBUF   |    10|
-|13    |OBUF   |    12|
+|13    |OBUF   |     4|
+|14    |OBUFT  |     8|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-------------------+--------------+------+
 |      |Instance           |Module        |Cells |
 +------+-------------------+--------------+------+
-|1     |top                |              |   125|
+|1     |top                |              |   152|
 |2     |  inst_clk         |clk_500k      |    22|
 |3     |  inst_nFlagGen    |nFlagGen      |    40|
-|4     |  inst_top         |top           |    40|
+|4     |  inst_top         |top           |    59|
 |5     |    inst_FSM       |FSM           |    10|
 |6     |      Q0           |LS74          |     5|
 |7     |      Q1           |LS74_1        |     5|
 |8     |    inst_counter   |counter_8bits |    21|
 |9     |      counter_LSBs |LS163         |    11|
 |10    |      counter_MSBs |LS163_0       |    10|
-|11    |    inst_LS573     |LS573_be      |     8|
+|11    |    inst_LS573     |LS573_be      |    19|
 +------+-------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 758.648 ; gain = 495.555
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 758.648 ; gain = 172.281
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 758.648 ; gain = 495.555
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 761.523 ; gain = 180.312
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 761.523 ; gain = 498.340
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 760.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.246 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-47 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+54 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 760.773 ; gain = 497.680
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 760.773 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 765.246 ; gain = 512.938
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.246 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Documents/Github/sailinglove/personal-general/Vivado/EE_BasicExpr/lab10/lab10.runs/synth_1/demo.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file demo_utilization_synth.rpt -pb demo_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 18 15:15:32 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 18 16:06:23 2022...

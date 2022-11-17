@@ -6,18 +6,18 @@ module LS573_be(
     output reg [7:0] O
     );
 
-    always @(posedge LE or posedge OE_L) begin
-        if (OE_L)
-            O <= 8'bz;
-        else if (LE)
-            O <= D;
-    end
-
-    // always @(posedge clk) begin
+    // always @(posedge LE or posedge OE_L) begin
     //     if (OE_L)
     //         O <= 8'bz;
     //     else if (LE)
     //         O <= D;
     // end
+
+    always @(posedge clk) begin
+        if (OE_L)
+            O <= 8'bz;
+        else if (LE)
+            O <= D;
+    end
 
 endmodule
